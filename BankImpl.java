@@ -4,7 +4,9 @@ public class BankImpl extends java.rmi.server.UnicastRemoteObject implements Ban
 {
 	public BankImpl() throws RemoteException
 	{super();}
-	int a[][] = {{123,1500},{124,2000},{125,2500}};
+	
+	int a[][] = {{123,1500},{124,2000},{125,2500}};//this is acc_number, balance pair 2-D array.
+	//hashmaps can also be used in place of 2D array.
 	int i;
 	public void deposit(int ac_no,int amount)
 	{
